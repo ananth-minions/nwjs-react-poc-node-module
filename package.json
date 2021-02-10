@@ -8,6 +8,8 @@
   "build": {
     "nwVersion": "0.39.3"
   },
+  "nodejs": true,
+  "chromium-args": "--mixed-context",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -17,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "nw-start": "nw .",
+    "launch": "npm-run-all -l -p start nw-start",
     "nwjs-reactbuild": "nw .",
     "prenwjs-reactbuild": "yarn build",
     "nwjs-pack": "build --tasks win-x86,win-x64,linux-x86,linux-x64,mac-x64 --mirror https://dl.nwjs.io/ .",
@@ -41,6 +44,7 @@
   },
   "devDependencies": {
     "concurrently": "^4.1.1",
+    "nw": "0.51.1-sdk",
     "nwjs-builder-phoenix": "^1.15.0",
     "wait-on": "^3.3.0"
   }
