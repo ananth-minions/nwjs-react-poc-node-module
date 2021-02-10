@@ -1,4 +1,4 @@
-Originally forked from https://github.com/ananth-minions/nwjs-react-poc-node-module.git
+Originally forked from [nwjs-with-cra](https://github.com/ttufekci/nwjs-with-cra)
 # NW.js - POC - network connectivity
 
 ## Available Scripts
